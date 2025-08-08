@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activityCard.className = "activity-card";
 
         const spotsLeft = details.max_participants - details.participants.length;
-        const participants = Array.isArray(details.participants) ? details.participants : [];
+        const participants = details.participants;
 
         activityCard.innerHTML = `
           <h4>${name}</h4>
